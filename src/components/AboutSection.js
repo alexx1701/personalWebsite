@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../img/self.jpg"
+import resume from "../file/Alexandra_Christopher_Resume.pdf"
 //import { useInView } from "react-intersection-observer";
 //import { DragControls, useAnimation } from "framer-motion";
 
@@ -13,15 +14,19 @@ const AboutMe = () => {
         controls.start("hidden");
     }*/
     return (
-        <div>
+        <div id="about">
             <Background>
+                
                 <Image>
                     <img src={img} alt="" />
                 </Image>
                 <Text>
                     <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit debitis possimus. Recusandae iure alias, temporibus nostrum illo debitis mollitia?</p>
+                    <p>Ambitious and self-motivated front-end developer. I love the creativity and freedom in building your own applications and websites. I am continuously looking to grow and improve my skills and knowledge!</p><br/>
+                    <p>Hobbies: Eating, Studying Languages, Web Design, Reading, Video Games</p>
+                    <a href={resume} target="_blank" rel="noreferrer">Resume</a>
                 </Text>
+                
             </Background>
         </div>
     )
@@ -35,6 +40,7 @@ const Image = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
     img {
         margin-top: 5rem;
         border-radius: 50%;
@@ -44,10 +50,18 @@ const Image = styled.div`
     }
 `
 const Text = styled.div`
-flex-direction: column; 
+    flex-direction: column; 
     display: flex;
-    min-height: 60vh;
     padding-left: 2rem;
-    padding: 5rem 10rem; 
-`
+    margin: 2rem;
+    h1{
+        text-shadow: 1px 2px 2px rgba(242, 116, 5, 0.5);
+        font-size: 4rem;
+    }
+    a {
+        color: rgb(242, 116, 5); /* blue colors for links too */
+        text-decoration: inherit; /* no underline */
+        font-size: 1.5rem;
+}`
+
 export default AboutMe;

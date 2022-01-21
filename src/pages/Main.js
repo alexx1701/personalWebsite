@@ -1,18 +1,17 @@
 import React from "react";
 import Hero from "../components/HeroSection";
 import AboutMe from "../components/AboutSection";
-import Projects from "../components/ProjectSection";
-import Contact from "../components/ContactSection";
+//Animations
+import {motion} from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 
 const Main = ( ) => {
     return (
-        <div>
+        <motion.div exit="exit" variants={pageAnimation} initial='hidden' animate='show'>
             <Hero />
             <AboutMe />
-            <Projects />
-            <Contact />
-        </div>
+        </motion.div>
     )
 }
 

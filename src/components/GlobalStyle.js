@@ -6,6 +6,12 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    html{
+        @media screen and (max-width: 768px){
+            font-size: 75%;
+        }
+    }
     body {
         background: #1b1b1b;
         color: rgb(193, 201, 204);
@@ -22,6 +28,9 @@ const GlobalStyle = createGlobalStyle`
         &:hover {
             color: white;
         }
+    }
+    h1 {
+        text-shadow: 1px 2px 2px rgba(255, 161, 79, 0.733);
     }
 `;
 

@@ -46,7 +46,7 @@ const Hero = () => {
 const Background=styled.div`
 background-image: url(${img});
 width: 100vw;
-height: 100vh;
+height: 90vh;
 background-size: cover;
 display: flex;
 align-items: center;
@@ -56,11 +56,10 @@ const Main=styled.div`
  display: flex;
  justify-content: center;
  align-items: center;
-  
 `
 const Title = styled.div`
   color: rgb(193, 201, 204);
-  text-shadow: 1px 1px 2px rgba(242, 116, 5, 0.5);
+  text-shadow: 1px 1px 2px rgba(255, 161, 79, 0.733);
   display: flex;
   flex-direction: column;
     z-index: 1;
@@ -80,6 +79,10 @@ const Circle = styled(motion.div)`
   opacity: 0.8;
   border-radius: 50%;
   position: absolute;
+  @media screen and (max-width: 768px){
+    min-height: 60vh;
+  min-width: 60vh;
+  }
 `
 
 export default Hero;

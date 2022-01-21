@@ -1,22 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import img from '../img/moon_stars.svg';
 
 const Nav = () => {
     return (
         <StyledNav>
-            <h1><a id="logo"href="#">Capture</a></h1>
+            <img src={img} alt="a moon" />
             <ul>
                 <li>
-                    <a href="#">Title</a>
+                    <Link to='/'>Main</Link>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <Link to='/projects'>Projects</Link>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <Link to='/resume'>Contact</Link>
                 </li>
             </ul>
         </StyledNav>
@@ -25,12 +24,15 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
     min-height: 10vh;
+    width: auto;
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    background: red;
+    background: #56696dff;
+    opacity: .8;
+    //filter: drop-shadow(0 0 0.2rem black);
     a {
         color: white;
         text-decoration: none;
