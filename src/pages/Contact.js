@@ -28,6 +28,10 @@ background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+user-select: none;  
 `
 const Main=styled.div`
  display: flex;

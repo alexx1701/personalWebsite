@@ -51,6 +51,10 @@ background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+user-select: none;  
 `
 const Main=styled.div`
  display: flex;
@@ -66,10 +70,16 @@ const Title = styled.div`
     line-height: .9;
   h1{
       font-size: 5.5rem;
+      @media screen and (max-width: 768px){
+      font-size: 5rem;
+  }
   }
   h2 {
       font-size: 3.5rem;
       font-weight:lighter;
+      @media screen and (max-width: 768px){
+      font-size: 3rem;
+  }
   }
 `
 const Circle = styled(motion.div)`

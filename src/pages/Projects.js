@@ -65,6 +65,10 @@ height: 100vh;
 display: flex;
 flex-direction: row;
 background-color: #3d44428f;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+user-select: none;  
 @media screen and (max-width: 768px){
         align-items: center;
         flex-direction: column;

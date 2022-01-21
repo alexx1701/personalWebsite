@@ -35,6 +35,10 @@ const Background = styled.div`
 width: 100vw;
 height: 100vh;
 background-color: #3d44428f;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+user-select: none;  
 `
 const Image = styled.div`
     display: flex;
@@ -62,6 +66,8 @@ const Text = styled.div`
         color: rgb(242, 116, 5); /* blue colors for links too */
         text-decoration: inherit; /* no underline */
         font-size: 1.5rem;
+        width: 5rem;
+        margin-top: 1rem;
 }`
 
 export default AboutMe;

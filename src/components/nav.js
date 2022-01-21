@@ -24,7 +24,7 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
     min-height: 10vh;
-    width: auto;
+    width: 100vw;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -32,6 +32,10 @@ const StyledNav = styled.nav`
     padding: 1rem 10rem;
     background: #56696dff;
     opacity: .8;
+    @media screen and (max-width: 768px){
+      font-size: 1rem;
+      justify-content: center;
+  }
     //filter: drop-shadow(0 0 0.2rem black);
     a {
         color: white;
@@ -41,9 +45,6 @@ const StyledNav = styled.nav`
         display: flex;
         list-style: none;
     }
-    #logo {
-        font-size: 1.5rem;
-        font-weight: lighter;
     }
     li {
         padding-left: 5rem;
