@@ -63,11 +63,15 @@ const Title = styled.div`
   }
 `
 const Circle = styled.div`
-  min-height: 70vh;
-  min-width: 70vh;
+  height: 70vh;
+  width: 70vh;
   background-color: #56696dff;
   opacity: 0.8;
   border-radius: 50%;
   position: absolute;
+  @media screen and (max-width: 768px){
+      height: 45vh;
+      width: 45vh;
+  }
 `
 export default Contact;

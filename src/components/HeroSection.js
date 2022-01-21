@@ -83,15 +83,15 @@ const Title = styled.div`
   }
 `
 const Circle = styled(motion.div)`
-  min-height: 85vh;
-  min-width: 85vh;
+  height: 85vh;
+  width: 85vh;
   background-color: #56696dff;
   opacity: 0.8;
   border-radius: 50%;
   position: absolute;
   @media screen and (max-width: 768px){
-    min-height: 60vh;
-  min-width: 60vh;
+      height: 45vh;
+      width: 45vh;
   }
 `
 
