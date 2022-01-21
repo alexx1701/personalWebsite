@@ -115,8 +115,11 @@ const Project = styled.div`
     img {
         min-width: 30vw;
         opacity: 80%;
-        
+        @media screen and (max-width: 768px){
+            width: 40vw;
+        }
     }
+    
     
 `
 
@@ -128,6 +131,9 @@ const ProjectFinished = styled.div`
         filter: drop-shadow(0 0 0.1rem grey);
         &:hover{
             transform: translatey(-1rem);
+        }
+        @media screen and (max-width: 768px){
+            width: 40vw;
         }
         
     }
