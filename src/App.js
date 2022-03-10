@@ -2,9 +2,12 @@ import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
 import Main from "./pages/Main";
 import Nav from "./components/nav";
-import Projects from "./pages/Projects";
+import NewProjects from "./pages/NewProjects";
+//import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { Routes, Route, useLocation } from 'react-router-dom';
+
+
 //Animation
 import {AnimatePresence} from 'framer-motion';
 
@@ -18,7 +21,8 @@ function App() {
       <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
       <Route path="/" exact element={<Main/>} />
-      <Route path="/projects" exact element={<Projects/>} />
+      <Route path="/projects" exact element={
+      <NewProjects />} />
       <Route path="/resume" exact element={<Contact/>} />
       </Routes>
       </AnimatePresence>

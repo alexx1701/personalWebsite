@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
             color: white;
         }
     }
-    h1 {
+    h1, h2 {
         text-shadow: 1px 2px 2px rgba(255, 161, 79, 0.733);
     }
 `;
