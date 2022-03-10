@@ -72,7 +72,11 @@ const Item = styled(motion.div)
   display: flex;
   justify-content: center;
   overflow: hidden;
-
+  @media screen and (max-width: 768px){
+    min-width: 40rem;
+    height: 90vh;
+    padding-top: 5rem;
+  }
   
 
   .img 
@@ -81,15 +85,20 @@ const Item = styled(motion.div)
     width: 100%;
     height: 100%;
     pointer-events: none;
+    @media screen and (max-width: 768px){
+      padding-bottom: 5rem;
     }
-  .grey {
-    filter: grayscale(100%);
-  }
+    
+    }
+  
   `
   const STitle = styled.h2`
     position: absolute;
     display: flex;
     white-space: nowrap;
+  @media screen and (max-width: 768px){
+    font-size:2rem;
+    
   `
 
   const Links = styled.div `
@@ -109,7 +118,7 @@ const Item = styled(motion.div)
         height: 4rem;
         width: 5rem;
         padding: 2px;
-        transform: translatey(-20px);
+        transform: translatey(68vh);
     }
     &:hover {
       background-color: white;
