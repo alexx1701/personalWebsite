@@ -10,7 +10,6 @@ import { useRef, useEffect, useState } from "react";
 const NewProjects = () => {
   
     const [width, setWidth] = useState(0);
-    const [hoverPopup, setHoverPopup] = useState(false);
     const carousel = useRef();
 
     useEffect(() => {
