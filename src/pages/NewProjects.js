@@ -61,7 +61,7 @@ const NewProjects = () => {
 
 ` */
 const Background = styled.div`
-width: 100vw;
+width: 95vw;
 height: 100vh;
 overflow: hidden;
 background-color: #3d44428f;
