@@ -94,8 +94,9 @@ const Item = styled(motion.div)
       width: 60h;
     pointer-events: none;
     @media screen and (max-width: 768px){
-      height: 60vh;
-      width: 50vh;
+      height: 65vh;
+      width: 55vh;
+      padding-bottom: 1rem;
     }
     }
   
@@ -108,7 +109,7 @@ const Item = styled(motion.div)
 
   @media screen and (max-width: 768px){
     font-size:3rem;
-    padding-bottom: 45rem;
+    padding-bottom: 42rem;
     
     
   `
