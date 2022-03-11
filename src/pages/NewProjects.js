@@ -5,6 +5,8 @@ import {motion} from 'framer-motion';
 import projects from '../data';
 import { pageAnimation } from '../animation';
 import { useRef, useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faDesktop } from "@fortawesome/free-solid-svg-icons";
 
 
 const NewProjects = () => {
@@ -19,7 +21,6 @@ const NewProjects = () => {
     return (
     <motion.div exit="exit" variants={pageAnimation} initial='hidden' animate='show' className="App">
         <Background>
-        {/* <Title>Projects</Title> */}
     <Carousel
     className="carousel"
     ref = {carousel}
@@ -35,8 +36,12 @@ const NewProjects = () => {
           <Item className="item" key={project.image} >
           <STitle>{project.title}</STitle>
           <Links>
-          <Button onClick={() => window.open(project.github)}>GitHub</Button>
-          <Button onClick={() => window.open(project.live)}>Live</Button>
+          <Button onClick={() => window.open(project.github)}>
+          <FontAwesomeIcon className="icon" icon={faCode} size="2x"/>
+          GitHub</Button>
+          <Button onClick={() => window.open(project.live)}>
+          <FontAwesomeIcon className="icon" icon={faDesktop} size="2x"/>
+            Live</Button>
           </Links>
           <img className="img" src={project.image} alt="" /> 
           </Item>
@@ -66,7 +71,7 @@ background-color: #3d44428f;
 `
 
 const Item = styled(motion.div) 
-  `min-height: 25rem;
+  `height: 80vh;
   padding: 30px 10px;
   min-width: 25rem;
   display: flex;
@@ -75,20 +80,22 @@ const Item = styled(motion.div)
   @media screen and (max-width: 768px){
     min-width: 40rem;
     height: 90vh;
-    padding-top: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+    
   }
   
-
   .img 
     {
-      padding-top: 8rem;
-    width: 100%;
-    height: 100%;
+      padding-top: 5rem;
+      height: 60vh;
+      width: 60h;
     pointer-events: none;
     @media screen and (max-width: 768px){
-      padding-bottom: 5rem;
+      height: 60vh;
+      width: 50vh;
     }
-    
     }
   
   `
@@ -96,8 +103,12 @@ const Item = styled(motion.div)
     position: absolute;
     display: flex;
     white-space: nowrap;
+    font-size: 2rem;
+
   @media screen and (max-width: 768px){
-    font-size:2rem;
+    font-size:3rem;
+    padding: 2rem;
+    
     
   `
 
@@ -109,29 +120,39 @@ const Item = styled(motion.div)
   const Button = styled.button`
     font-size: .8rem;
     border-radius: 25%;
-    padding: 15px;
-    margin: 5px;
-    width: 5rem;
-    height: 3rem;
+    margin: 6px;
+    width: 6rem;
+    height: 4rem;
+    padding: 10px 20px;
     border-style: solid;
+    transform: translatey(27rem);
+    
+
     @media screen and (max-width: 768px){
         height: 4rem;
-        width: 5rem;
+        width: 6rem;
         padding: 2px;
-        transform: translatey(68vh);
+        font-size: 1rem;
     }
     &:hover {
       background-color: white;
       color: #1b1b1b;
     }
+    .icon {
+      display: flex;
+      padding-left: 10px;
+    }
   `
 const ICarousel = styled(motion.div) 
    ` display: flex;
+   
    `
   
 const Carousel = styled(motion.div)
     `cursor: grab;
     overflow: hidden;
+    padding-top: 50px;
+   
     `
   
   
