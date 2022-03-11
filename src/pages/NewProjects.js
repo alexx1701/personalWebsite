@@ -63,6 +63,7 @@ const NewProjects = () => {
 const Background = styled.div`
 width: 100vw;
 height: 100vh;
+overflow: hidden;
 background-color: #3d44428f;
 @media screen and (max-width: 768px){
         height: 95vh;
@@ -79,9 +80,9 @@ const Item = styled(motion.div)
   overflow: hidden;
   @media screen and (max-width: 768px){
     min-width: 40rem;
-    height: 90vh;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: 2rem;
     
   }
@@ -107,7 +108,7 @@ const Item = styled(motion.div)
 
   @media screen and (max-width: 768px){
     font-size:3rem;
-    padding: 2rem;
+    padding-bottom: 45rem;
     
     
   `
@@ -129,10 +130,11 @@ const Item = styled(motion.div)
     
 
     @media screen and (max-width: 768px){
-        height: 4rem;
-        width: 6rem;
-        padding: 2px;
+        height: 5rem;
+        padding: 10px 20px;
         font-size: 1rem;
+        width: 8rem;
+        transform: translatey(22rem);
     }
     &:hover {
       background-color: white;
@@ -145,7 +147,7 @@ const Item = styled(motion.div)
   `
 const ICarousel = styled(motion.div) 
    ` display: flex;
-   
+    
    `
   
 const Carousel = styled(motion.div)
