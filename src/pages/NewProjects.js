@@ -65,7 +65,7 @@ width: 100vw;
 height: 100vh;
 background-color: #3d44428f;
 @media screen and (max-width: 768px){
-        height: 95vh;
+        
     }
     
 `
@@ -78,11 +78,10 @@ const Item = styled(motion.div)
   justify-content: center;
   overflow: hidden;
   @media screen and (max-width: 768px){
-    min-width: 40rem;
+    min-width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
     
   }
   
@@ -95,7 +94,7 @@ const Item = styled(motion.div)
     @media screen and (max-width: 768px){
       height: 65vh;
       width: 55vh;
-      padding-bottom: 1rem;
+      margin-bottom: 6rem;
     }
     }
   
@@ -134,7 +133,7 @@ const Item = styled(motion.div)
         padding: 10px 20px;
         font-size: 1rem;
         width: 8rem;
-        transform: translatey(22rem);
+        transform: translatey(16rem);
     }
     &:hover {
       background-color: white;
