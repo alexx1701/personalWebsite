@@ -38,7 +38,7 @@ const NewProjects = () => {
           <Links>
           <Button onClick={() => window.open(project.github)}>
           <FontAwesomeIcon className="icon" icon={faCode} size="2x"/>
-          GitHub</Button>
+          Code</Button>
           <Button onClick={() => window.open(project.live)}>
           <FontAwesomeIcon className="icon" icon={faDesktop} size="2x"/>
             Live</Button>
