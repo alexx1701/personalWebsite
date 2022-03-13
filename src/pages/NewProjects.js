@@ -76,7 +76,8 @@ const Item = styled(motion.div)
   min-width: 25rem;
   display: flex;
   justify-content: center;
-  margin: 0 5%;
+  margin-right: 5%;
+  //background-color: red;
   @media screen and (max-width: 768px){
     min-width: 100vw;
     flex-direction: column;
@@ -123,11 +124,12 @@ const Item = styled(motion.div)
     margin: 6px;
     width: 6rem;
     height: 4rem;
-    padding: 10px 20px;
     border-style: solid;
-    transform: translatey(26rem);
-    
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(58vh);
+  
     @media screen and (max-width: 768px){
         height: 5rem;
         padding: 10px 20px;
@@ -141,10 +143,7 @@ const Item = styled(motion.div)
     }
     .icon {
       display: flex;
-      padding-left: 3px;
-      @media screen and (max-width: 768px){
-        padding-left: 3px;
-      }
+      padding: 5px;
     }
   `
 const ICarousel = styled(motion.div) 
