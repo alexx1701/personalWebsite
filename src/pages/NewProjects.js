@@ -62,10 +62,10 @@ const NewProjects = () => {
 ` */
 const Background = styled.div`
 width: 100vw;
-height: 100vh;
+height: 90vh;
 background-color: #3d44428f;
 @media screen and (max-width: 768px){
-        
+  height: 90vh;
     }
     
 `
@@ -76,7 +76,7 @@ const Item = styled(motion.div)
   min-width: 25rem;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  margin: 0 5%;
   @media screen and (max-width: 768px){
     min-width: 100vw;
     flex-direction: column;
@@ -89,10 +89,10 @@ const Item = styled(motion.div)
     {
       padding-top: 5rem;
       height: 60vh;
-      width: 60h;
+      width: 55vh;
     pointer-events: none;
     @media screen and (max-width: 768px){
-      height: 65vh;
+      height: 60vh;
       width: 55vh;
       margin-bottom: 6rem;
     }
@@ -125,7 +125,7 @@ const Item = styled(motion.div)
     height: 4rem;
     padding: 10px 20px;
     border-style: solid;
-    transform: translatey(27rem);
+    transform: translatey(26rem);
     
 
     @media screen and (max-width: 768px){
@@ -133,7 +133,7 @@ const Item = styled(motion.div)
         padding: 10px 20px;
         font-size: 1rem;
         width: 8rem;
-        transform: translatey(16rem);
+        transform: translatey(19rem);
     }
     &:hover {
       background-color: white;
@@ -141,7 +141,10 @@ const Item = styled(motion.div)
     }
     .icon {
       display: flex;
-      padding-left: 10px;
+      padding-left: 3px;
+      @media screen and (max-width: 768px){
+        padding-left: 3px;
+      }
     }
   `
 const ICarousel = styled(motion.div) 
