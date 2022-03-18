@@ -22,7 +22,7 @@ const AboutMe = () => {
                 </Image>
                 <Text>
                     <h1>About Me</h1>
-                    <p>Ambitious and self-motivated front-end developer. I love the creativity and freedom in building your own applications and websites. I am continuously looking to grow and improve my skills and knowledge!</p><br/>
+                    <p>Hi! My name is Alex and I'm extremely passionate about front end / web development. To me, it's the perfect combination of art and tech. I am continuously looking to grow and improve my skills and knowledge!</p><br/>
                     <p>Hobbies: Eating, Studying Languages, Web Design, Reading, Video Games</p>
                     <a href={resume} target="_blank" rel="noreferrer">Resume</a>
                 </Text>
